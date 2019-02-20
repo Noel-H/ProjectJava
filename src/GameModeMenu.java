@@ -9,16 +9,19 @@ public class GameModeMenu {
 
     }
 
-    void selectionMode(int gameModeNum) {
+    boolean selectionMode(int gameModeNum) {
 
         if(gameModeNum==1){
             ModePlusMinus modePlusMinus=new ModePlusMinus();
             modePlusMinus.runGamePlusMinus();
+            return true;
         } else if (gameModeNum==2){
-
+return false;
         }else if (gameModeNum==3){
+            return false;
 
         }else {
+            return false;
 
         }
 
