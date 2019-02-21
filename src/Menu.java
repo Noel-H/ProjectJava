@@ -20,11 +20,22 @@ public class Menu {
 
                 ModePlusMinus modePlusMinus = new ModePlusMinus();
                 modePlusMinus.runGamePlusMinus();
+
                 selectedMenu = true;
 
+            } else if (selectionChoiceMenu==3){
+
+                System.out.println("Bye bye.");
+
+                selectedMenu = true;
+
+
             } else {
-                System.out.println("Indisponible !");
+
                 System.out.println();
+                System.out.println("Choix indisponible pour le moment.");
+                System.out.println();
+
             }
         }
     }

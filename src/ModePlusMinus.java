@@ -20,15 +20,16 @@ public class ModePlusMinus {
         nbGenerate4 = (int) (Math.random() * 10);
 //        System.out.println(nbGenerate4);
 
-
-        System.out.println("Code à trouver = " + nbGenerate1 + " | " + nbGenerate2 + " | " + nbGenerate3 + " | " + nbGenerate4);
+        System.out.println("Le code est généré.");
+        System.out.println("Code à trouver = ????");
+//        System.out.println("Code à trouver = " + nbGenerate1 + " | " + nbGenerate2 + " | " + nbGenerate3 + " | " + nbGenerate4);
         System.out.println();
 
         boolean success = false;
 
         while (!success) {
 
-            System.out.println("Entrez une combinaisons.");
+            System.out.println("Entrez une combinaisons de 4 chiffres.");
 
             Scanner sc = new Scanner(System.in);
 
@@ -141,6 +142,8 @@ public class ModePlusMinus {
         }
 
         System.out.println("GG WP !!");
+        System.out.println();
+        Menu.principalMenu();
 
     }
 }
