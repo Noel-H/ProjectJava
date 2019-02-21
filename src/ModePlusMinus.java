@@ -6,25 +6,23 @@ public class ModePlusMinus {
 
         int nbGenerate1;
         nbGenerate1 = (int) (Math.random() * 10);
-        System.out.println(nbGenerate1);
+//        System.out.println(nbGenerate1);
 
         int nbGenerate2;
         nbGenerate2 = (int) (Math.random() * 10);
-        System.out.println(nbGenerate2);
+//        System.out.println(nbGenerate2);
 
         int nbGenerate3;
         nbGenerate3 = (int) (Math.random() * 10);
-       System.out.println(nbGenerate3);
+//       System.out.println(nbGenerate3);
 
         int nbGenerate4;
         nbGenerate4 = (int) (Math.random() * 10);
-        System.out.println(nbGenerate4);
+//        System.out.println(nbGenerate4);
 
 
         System.out.println("Code à trouver = " + nbGenerate1 + " | " + nbGenerate2 + " | " + nbGenerate3 + " | " + nbGenerate4);
-
-
-        System.out.println(" ");
+        System.out.println();
 
         boolean success = false;
 
@@ -50,46 +48,99 @@ public class ModePlusMinus {
 
 
             if (nbGenerate1 < nb1) {
+
                 reponseNumnb1 = '-';
+
             } else if (nbGenerate1 == nb1) {
+
                 reponseNumnb1 = '=';
-            } else {
+
+            } else if (nbGenerate1 > nb1) {
+
                 reponseNumnb1 = '+';
+
+            } else {
+
+                reponseNumnb1 = '\u0000';
+
             }
+
 
             if (nbGenerate2 < nb2) {
+
                 reponseNumnb2 = '-';
+
             } else if (nbGenerate2 == nb2) {
+
                 reponseNumnb2 = '=';
-            } else {
+
+            } else if (nbGenerate2 > nb2) {
+
                 reponseNumnb2 = '+';
+
+            } else {
+
+                reponseNumnb2 = '\u0000';
+
             }
+
 
             if (nbGenerate3 < nb3) {
+
                 reponseNumnb3 = '-';
+
             } else if (nbGenerate3 == nb3) {
+
                 reponseNumnb3 = '=';
-            } else {
+
+            } else if (nbGenerate3 > nb3) {
+
                 reponseNumnb3 = '+';
+
+            } else {
+
+                reponseNumnb3 = '\u0000';
+
             }
+
 
             if (nbGenerate4 < nb4) {
+
                 reponseNumnb4 = '-';
+
             } else if (nbGenerate4 == nb4) {
+
                 reponseNumnb4 = '=';
-            } else {
+
+            } else if (nbGenerate4 > nb4) {
+
                 reponseNumnb4 = '+';
+
+            } else {
+
+                reponseNumnb4 = '\u0000';
+
             }
 
-            System.out.println(reponseNumnb1 + " | " + reponseNumnb2 + " | " + reponseNumnb3 + " | " + reponseNumnb4);
 
-            if (reponseNumnb1 == '=' && reponseNumnb2 == '=' && reponseNumnb3 == '=' && reponseNumnb4 == '=') {
+            if (reponseNumnb1 == '\u0000' || reponseNumnb2 == '\u0000' || reponseNumnb3 == '\u0000' || reponseNumnb4 == '\u0000') {
+
+                System.out.println("Error");
+
+            } else if (reponseNumnb1 == '=' && reponseNumnb2 == '=' && reponseNumnb3 == '=' && reponseNumnb4 == '=') {
+
+                System.out.println(reponseNumnb1 + " | " + reponseNumnb2 + " | " + reponseNumnb3 + " | " + reponseNumnb4);
+
                 success = true;
+
+            } else {
+
+                System.out.println(reponseNumnb1 + " | " + reponseNumnb2 + " | " + reponseNumnb3 + " | " + reponseNumnb4);
+
             }
         }
-        System.out.println("GG");
+
+        System.out.println("GG WP !!");
 
     }
-
-
 }
