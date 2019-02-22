@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ModePlusMinus {
-
+    
     void runGamePlusMinus() {
 
         int nbGenerate1;
